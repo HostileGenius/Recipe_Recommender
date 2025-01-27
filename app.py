@@ -1,3 +1,6 @@
+import os
+csv_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data/recipes.csv')
+recipes_df = pd.read_csv(csv_file_path)
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 
